@@ -1,0 +1,16 @@
+# Parámetros del nodo Pick & Place. Cambia aquí los puntos de interés sin recompilar
+# (con --symlink-install) y relanza el nodo.
+pick_place_node:
+  ros__parameters:
+    move_time: 3.0
+    gripper_open: [0.04, 0.04]
+    gripper_closed: [0.004, 0.004]
+    gripper_wait: 1.5
+    pulse_time: 1.0
+    auto_input_delay: 2.0
+    poses:
+      home:           [0.0, -1.57, 1.57, -1.57, -1.57, 0.0]
+      pick_approach:  [0.6, -1.50, 1.40, -1.47, -1.57, 0.6]
+      pick:           [0.6, -1.30, 1.60, -1.87, -1.57, 0.6]
+      place_approach: [-0.6, -1.50, 1.40, -1.47, -1.57, -0.6]
+      place:          [-0.6, -1.30, 1.60, -1.87, -1.57, -0.6]
